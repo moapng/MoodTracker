@@ -1,0 +1,18 @@
+:root {
+  --darker-pink: #e5bdd9;
+  --lighter-pink: #f0cbe5;
+  --almost-white: #f4f4f4;
+}
+
+body {
+  background-color: var(--lighter-pink);
+}
+
+.card {
+  width: 18rem;
+  height: 18rem;
+  background-color: var(--darker-pink);
+}
+.card-title {
+  color: var(--almost-white);
+}
