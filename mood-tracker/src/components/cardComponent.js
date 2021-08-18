@@ -5,7 +5,7 @@ export default class CardComponent extends Component {
         return (
 
             <div class="card">
-                <img class="card-img-top" src="../icons/cloudy.png" alt="Image of a sun and a cloud" />
+                <img class="card-img-top" src={this.props.src} alt={this.props.alt} />
                 <h5 class="card-title">weather</h5>
             </div>
 
