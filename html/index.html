@@ -2,13 +2,6 @@
 <html>
 
 <head>
-    <!-- CSS only
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        JavaScript Bundle with Popper
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
--->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans+Condensed:wght@300&display=swap"
         rel="stylesheet">
 
@@ -20,10 +13,12 @@
 </head>
 
 <body>
+
     <h1>MoodTracker!</h1>
+    <div id='root'></div>
     <div class="row">
         <div class="card">
-            <img class="card-img-top" src="../icons/cloudy2.png" alt="Image of a sun and a cloud">
+            <img class="card-img-top" src="../icons/cloudy.png" alt="Image of a sun and a cloud">
             <h5 class="card-title">weather</h2>
         </div>
         <div class="card">
@@ -42,6 +37,15 @@
             <h5 class="card-title">of note</h2>
         </div>
     </div>
+
+
+
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script src="../components/cardComponent.js" type="text/babel"></script>
 </body>
 
 </html>
