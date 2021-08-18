@@ -10,12 +10,15 @@
 }
 
 body {
+  font-family: 'Open Sans Condensed', sans-serif;
   background-color: var(--lighter-pink);
   color: var(--almost-white);
 }
 
 h1 {
+  margin-top: 2vw;
   font-size: 8vw;
+  font-family: 'Merriweather', serif;
   text-align: center;
 }
 
