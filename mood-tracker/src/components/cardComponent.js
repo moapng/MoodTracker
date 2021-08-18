@@ -6,7 +6,7 @@ export default class CardComponent extends Component {
 
             <div class="card">
                 <img class="card-img-top" src={this.props.src} alt={this.props.alt} />
-                <h5 class="card-title">weather</h5>
+                <h5 class="card-title">{this.props.name}</h5>
             </div>
 
         );
