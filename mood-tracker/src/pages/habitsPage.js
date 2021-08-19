@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Menu from '../components/menu';
 
-class HomePage extends Component {
+class HabitsPage extends Component {
     render() {
         return (
             <div>
-                <Menu />
+                <h1>HABItstststasttsts</h1>
             </div>
         );
     }
 }
 
-export default HomePage;
+export default HabitsPage;

@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Menu from '../components/menu';
 
-class HomePage extends Component {
+class MoodPage extends Component {
     render() {
         return (
             <div>
-                <Menu />
+                <h1>MOOOOOOOOOD</h1>
             </div>
         );
     }
 }
 
-export default HomePage;
+export default MoodPage;
