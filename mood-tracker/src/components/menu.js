@@ -6,7 +6,7 @@ class Menu extends Component {
     render() {
         return (
             <div>
-                <div class="row">
+                <div className="row">
                     <Link to="/weather">
                         <CardComponent src="../icons/cloudy.png" alt="Image of a sun and a cloud" name="weather" />
                     </Link>
@@ -14,7 +14,7 @@ class Menu extends Component {
                         <CardComponent src="../icons/mood.icon.png" alt="Image of a few different moods; happy, sad, angry" name="mood" />
                     </Link>
                 </div>
-                <div class="row">
+                <div className="row">
                     <Link to="/habits">
                         <CardComponent src="../icons/checkbox2.png" alt="Image of checkboxes" name="habits" />
                     </Link>
