@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import BrowserWindowComponent from '../components/browserWindowComponent';
 
 class HabitsPage extends Component {
     render() {
         return (
-            <div>
-                <h1>HABItstststasttsts</h1>
-            </div>
+            <>
+                <BrowserWindowComponent title="Habits" info="haaabisdisdbdsibsdibsbsibsis" />
+            </>
         );
     }
 }

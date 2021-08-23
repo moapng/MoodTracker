@@ -20,7 +20,7 @@
   --lighter-orange: #FFE5D9;
 
   
-  --large: 33vw;
+  --large: 32vw;
   --medium: 25vw;
   --small: 20vw;
   --xsmall: 16vw;
@@ -34,10 +34,19 @@ body {
 }
 
 h1 {
-  margin-top: 2vw;
   font-size: 8vw;
   font-family: 'Merriweather', serif;
   text-align: center;
+  margin-top: 2vw;
+}
+h2 {
+  font-size: 4vw;
+  font-family: 'Merriweather', serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p {
+  font-size: 2vw;
 }
 
 a {
@@ -68,7 +77,6 @@ a:hover {
 .card:hover {
 background-color: var(--darker-blueish-green);
 }
-
 .card-img-top {
   width: 12vw;
   height: 12vw;
@@ -84,29 +92,35 @@ background-color: var(--darker-blueish-green);
 
 
 
-.dot {
+.browser-dot {
   height: 12px;
   width: 12px;
   background-color: var(--green);
-  margin-right: 4px;
+  margin: auto;
   border-radius: 50%;
   display: inline-block;
 }
-
-.container {
+.browser-dot-group{
+  width: 36px;
+}
+.browser-dot-group:hover span{
+  cursor: pointer;
+  background-color: var(--blueish-green);
+}
+.browser-container {
+  width: 80vw;
   border: 3px solid var(--blueish-green);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  margin: auto;
 }
-
-.top {
+.browser-top {
   padding: 10px;
   background: var(--darker-blueish-green);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-
-.content {
+.browser-content {
   padding: 10px;
 }
 
@@ -115,9 +129,16 @@ background-color: var(--darker-blueish-green);
 
 
 @media (max-width: 500px) { 
+  
+  h2 {
+    font-size: 7vw;
+  }
+  p {
+    font-size: 5vw;
+  }
 
   .row {
-    margin-bottom: 3vw;
+    margin-top: 15vw;
     margin-left: 10vw;
   }
 
@@ -135,4 +156,7 @@ background-color: var(--darker-blueish-green);
     margin-top: 0;
   }
 
+  .browser-container {
+    width: 92vw;
+  }
 }

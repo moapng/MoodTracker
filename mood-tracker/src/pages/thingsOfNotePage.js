@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import BrowserWindowComponent from '../components/browserWindowComponent';
 
 class ThingsOfNotePage extends Component {
     render() {
         return (
-            <div>
-                <h1>things of ntoe!!! anything fun happen today???</h1>
-            </div>
+            <>
+                <BrowserWindowComponent title="Things of Note" info="anything fun happen today???" />
+            </>
         );
     }
 }
