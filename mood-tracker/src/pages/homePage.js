@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
-import Menu from '../components/menu';
+import { BrowserView, MobileView } from 'react-device-detect';
+import BrowserMenu from '../components/menus/browserMenu';
+import MobileMenu from '../components/menus/mobileMenu';
+
 
 class HomePage extends Component {
     render() {
         return (
-            <div>
-                <Menu />
-            </div>
+            <>
+                <BrowserView>
+                    <BrowserMenu />
+                </BrowserView>
+
+                <MobileView>
+                    <MobileMenu />
+                </MobileView>
+            </>
         );
     }
 }

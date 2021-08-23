@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import CardComponent from './cardComponent';
+import CardComponent from '../cardComponent';
 
-class Menu extends Component {
+class BrowserMenu extends Component {
     render() {
         return (
-            <div>
+            <>
                 <div className="container">
                     <div className="row">
                         <div className="col-6 col-md-3 offset-md-3">
@@ -32,8 +32,8 @@ class Menu extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </>
         );
     }
 }
-export default Menu;
+export default BrowserMenu;

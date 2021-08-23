@@ -124,20 +124,18 @@ background-color: var(--darker-blueish-green);
     font-size: 5vw;
   }
 
-  .row:first-of-type {
-    margin-top: 50vw;
-  }
-
   .card {
-    width: 42.5vw;
-    height: 42.5vw;
+    width: 75vw;
+    height: 75vw;
+    border-radius: 45%;
+    margin: auto;
   }
   .card-img-top{
-    width: 30vw;
-    height: 305vw;
+    width: 55vw;
+    height: 55vw;
   }
   .card-title {
-    font-size: 8vw;
+    font-size: 10vw;
     margin-top: 0;
   }
-} 
+}
