@@ -18,12 +18,6 @@
   --darker-orange: #FEC89A;
   --orange: #FFD7BA;
   --lighter-orange: #FFE5D9;
-
-  
-  --large: 32vw;
-  --medium: 25vw;
-  --small: 20vw;
-  --xsmall: 16vw;
 }
 
 
@@ -59,19 +53,15 @@ a:hover {
 }
 
 .row {
-  margin-bottom: 3vw;
-  margin-left: 25vw;
+  margin-top:3vw;
 }
 
-
 .card {
-  display: inline-block;
-  width: var(--small);
-  height: var(--xsmall);
+  width: 20vw;
+  height: 16vw;
   background-color: var(--blueish-green);
   border-radius: 20%;
   transition: 0.6s;
-  margin-right: 10vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card:hover {
@@ -108,11 +98,9 @@ background-color: var(--darker-blueish-green);
   background-color: var(--blueish-green);
 }
 .browser-container {
-  width: 80vw;
   border: 3px solid var(--blueish-green);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  margin: auto;
 }
 .browser-top {
   padding: 10px;
@@ -127,7 +115,6 @@ background-color: var(--darker-blueish-green);
 
 
 
-
 @media (max-width: 500px) { 
   
   h2 {
@@ -137,26 +124,20 @@ background-color: var(--darker-blueish-green);
     font-size: 5vw;
   }
 
-  .row {
-    margin-top: 15vw;
-    margin-left: 10vw;
+  .row:first-of-type {
+    margin-top: 50vw;
   }
 
   .card {
-    width: var(--large);
-    height: var(--large);
-    margin-right: 6vw;
+    width: 42.5vw;
+    height: 42.5vw;
   }
   .card-img-top{
-    width: var(--medium);
-    height: var(--medium);
+    width: 30vw;
+    height: 305vw;
   }
   .card-title {
-    font-size: 5vw;
+    font-size: 8vw;
     margin-top: 0;
   }
-
-  .browser-container {
-    width: 92vw;
-  }
-}
+} 
