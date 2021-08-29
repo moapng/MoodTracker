@@ -1,22 +1,15 @@
 import React, { Component } from 'react';
+import MiniMenu from './menus/miniMenu';
 
 class BrowserWindowComponent extends Component {
     render() {
-        function handleClick(e) {
-            e.preventDefault();
-            alert("open mini menu");
-        }
         return (
             <div className="column">
                 <div className="row">
                     <div className="col-10 offset-1">
                         <div className="browser-container">
                             <div className="browser-top">
-                                <div className="browser-dot-group" onClick={handleClick}>
-                                    <span className="browser-dot"></span>
-                                    <span className="browser-dot"></span>
-                                    <span className="browser-dot"></span>
-                                </div>
+                                <MiniMenu />
                             </div>
 
                             <div className="browser-content">
