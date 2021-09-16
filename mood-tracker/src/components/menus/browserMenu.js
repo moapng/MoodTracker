@@ -28,7 +28,7 @@ class BrowserMenu extends Component {
                         {this.state.categories.map((category) =>
                             <div className="col-6 col-md-3 offset-md-3">
                                 <Link to={"/" + category.name} >
-                                    <CardComponent src="" alt="" name={category.name} description={category.description} />
+                                    <CardComponent name={category.name} description={category.description} />
                                 </Link>
                             </div>
                         )}

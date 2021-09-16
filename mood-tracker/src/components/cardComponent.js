@@ -5,8 +5,8 @@ class CardComponent extends Component {
         return (
 
             <div className="card">
-                <img className="card-img-top" src={this.props.src} alt={this.props.alt} />
                 <h5 className="card-title">{this.props.name}</h5>
+                <p>{this.props.description}</p>
             </div>
 
         );
