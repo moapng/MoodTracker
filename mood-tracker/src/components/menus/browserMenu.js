@@ -3,33 +3,35 @@ import { Link } from 'react-router-dom';
 import CardComponent from '../cardComponent';
 
 class BrowserMenu extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            categories: []
+        }
+    }
+    componentDidMount() {
+        fetch("https://localhost:44302/api/category")
+            .then(response => response.json())
+            .then(
+                (result) => {
+                    this.setState({ categories: result })
+                    console.log(this.state.categories);
+                }
+            );
+    }
+
     render() {
         return (
             <>
                 <div className="container">
                     <div className="row">
-                        <div className="col-6 col-md-3 offset-md-3">
-                            <Link to="/weather">
-                                <CardComponent src="../icons/cloudy.png" alt="Image of a sun and a cloud" name="weather" />
-                            </Link>
-                        </div>
-                        <div className="col-6 col-md-3">
-                            <Link to="/mood">
-                                <CardComponent src="../icons/mood.icon.png" alt="Image of a few different moods; happy, sad, angry" name="mood" />
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-6 col-md-3 offset-md-3">
-                            <Link to="/habits">
-                                <CardComponent src="../icons/checkbox2.png" alt="Image of checkboxes" name="habits" />
-                            </Link>
-                        </div>
-                        <div className="col-6 col-md-3">
-                            <Link to="/things-of-note">
-                                <CardComponent src="../icons/note.png" alt="Image of a generic note" name="things of note" />
-                            </Link>
-                        </div>
+                        {this.state.categories.map((category) =>
+                            <div className="col-6 col-md-3 offset-md-3">
+                                <Link to={"/" + category.name} >
+                                    <CardComponent src="" alt="" name={category.name} description={category.description} />
+                                </Link>
+                            </div>
+                        )}
                     </div>
                 </div>
             </>

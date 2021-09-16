@@ -26,7 +26,7 @@ function App() {
           <Route exact path="/habits">
             <HabitsPage />
           </Route>
-          <Route exact path="/things-of-note">
+          <Route exact path="/Things Of Note">
             <ThingsOfNotePage />
           </Route>
         </Switch>
