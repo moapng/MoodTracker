@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MiniMenu from './menus/miniMenu';
 
 class BrowserWindowComponent extends Component {
     render() {
@@ -9,7 +8,6 @@ class BrowserWindowComponent extends Component {
                     <div className="col-10 offset-1">
                         <div className="browser-container">
                             <div className="browser-top">
-                                <MiniMenu />
                             </div>
 
                             <div className="browser-content">

@@ -15,7 +15,6 @@ class BrowserMenu extends Component {
             .then(
                 (result) => {
                     this.setState({ categories: result })
-                    console.log(this.state.categories);
                 }
             );
     }
