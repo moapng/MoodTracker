@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class MobileWindowComponent extends Component {
-    render() {
-        return (
-            <>
-                <div className="column">
-                    <div className="row">
-                        <div className="col-12">
-                            <h1>{this.props.title}</h1>
-                            <p>{this.props.info}</p>
-                        </div>
+function MobileWindowComponent(props) {
+
+    return (
+        <>
+            <div className="column">
+                <div className="row">
+                    <div className="col-12">
+                        <h1>{props.title}</h1>
+                        <p>{props.info}</p>
                     </div>
                 </div>
-            </>
-        );
-    }
+            </div>
+        </>
+    );
 }
+
 
 export default MobileWindowComponent;
