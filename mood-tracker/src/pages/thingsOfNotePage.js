@@ -9,26 +9,26 @@ function ThingsOfNotePage() {
 
     const handleChange = (event) => {
         setNote(event.target.value);
-        setDate(Date);
+        setDate('2021-10-18');
         //setId till den som är inloggad
         console.log(nDate, id, note);
     }
     const handleSubmit = () => {
-
         fetch('https://localhost:44302/api/ofnote', {
+            mode: 'cors',
             method: 'POST',
             body: JSON.stringify({
                 note: note,
                 nDate: nDate,
                 id: id
             }),
-            headers: { 'Content-type': 'application/json; charset=UTF-8' },
+            headers: {
+                'Content-type': 'application/json',
 
-        }
-            .catch(error => { console.log('Error:', error); })
-        );
+            },
+
+        }).catch((error) => { console.error(error); })
     }
-
     return (
 
         <>
