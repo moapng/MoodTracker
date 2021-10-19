@@ -7,12 +7,13 @@ function ThingsOfNotePage() {
     const [nDate, setDate] = useState();
     const [id, setId] = useState(1);
 
+    var today = new Date();
     const handleChange = (event) => {
         setNote(event.target.value);
-        setDate('2021-10-18');
+        setDate(today.toISOString());
         //setId till den som är inloggad
-        console.log(nDate, id, note);
     }
+
     const handleSubmit = () => {
         fetch('https://localhost:44302/api/ofnote', {
             mode: 'cors',
