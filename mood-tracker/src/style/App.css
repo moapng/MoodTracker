@@ -116,6 +116,26 @@ background-color: var(--darker-blueish-green);
 }
 
 
+.miniNoteCard {
+  width: 15vw;
+  height: 17vw;
+  background: var(--darkest-green);
+  border-radius: 10%;
+  transition: 0.6s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+}
+.miniNoteCard h1 {
+  color:var(--almost-white);
+  text-align: center;
+  font-size: 1.5vw;
+}
+.miniNoteCard p {
+  color:var(--almost-white);
+  text-align: center;
+  font-size: 1.5vw;
+}
+
 
 @media (max-width: 500px) { 
   

@@ -1,31 +1,33 @@
 import React, { useState } from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
-import MobileWindowComponent from '../components/mobileWindowComponent';
+import MiniNoteComponent from '../components/miniNoteComponent';
 
 function ThingsOfNotePage() {
     const [note, setNote] = useState();
     const [nDate, setDate] = useState();
-    const [id, setId] = useState(1);
+    const [uId, setuId] = useState(1);
+    const [id, setId] = useState();
 
     var today = new Date();
     const handleChange = (event) => {
         setNote(event.target.value);
         setDate(today.toISOString());
-        //setId till den som är inloggad
     }
 
     const handleSubmit = () => {
+        //setuId till den som är inloggad
+        setId(crypto.randomUUID());
         fetch('https://localhost:44302/api/ofnote', {
             mode: 'cors',
             method: 'POST',
             body: JSON.stringify({
                 note: note,
                 nDate: nDate,
+                uId: uId,
                 id: id
             }),
             headers: {
                 'Content-type': 'application/json',
-
             },
 
         }).catch((error) => { console.error(error); })
@@ -43,11 +45,13 @@ function ThingsOfNotePage() {
                         <button type="submit" className="btn btn-primary" id="noteSubmit" onClick={handleSubmit}>Submit</button>
                     </div>
                 </form>
+                <div className="row" />
+                {/* mini fönster med fem? senaste dagarnas dagbokinlägg */}
+                <MiniNoteComponent />
 
             </BrowserView>
 
             <MobileView>
-                <MobileWindowComponent title="Things of Note" info="" />
             </MobileView>
         </>
     );
