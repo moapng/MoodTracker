@@ -46,7 +46,6 @@ function ThingsOfNotePage() {
                     </div>
                 </form>
                 <div className="row" />
-                {/* mini fönster med fem? senaste dagarnas dagbokinlägg */}
                 <MiniNoteComponent />
 
             </BrowserView>
