@@ -7,33 +7,35 @@ function HabitsPage() {
         <>
             <BrowserView>
                 <div className="container">
-                    <div className="form-check form-check-inline">
-                        <input className="form-check-input" type="checkbox" id="toothbrushBox" value="toothbrush" />
-                        <label className="form-check-label" for="toothbrushBox">toothbrush</label>
+
+                    <div className="row">
+                        <p className="col" >tb</p>
+                        <p className="col" >hb</p>
+                        <p className="col" >scr</p>
+                        <p className="col" >pl</p>
+                        <p className="col" >gym</p>
+                        <p className="col" >dc</p>
+                        <p className="col" >me</p>
+                        <p className="col" >pet</p>
                     </div>
-                    <div className="form-check form-check-inline">
-                        <input className="form-check-input" type="checkbox" id="hairbrushBox" value="hairbrush" />
-                        <label className="form-check-label" for="toothbrushBox">hairbrush</label>
-                    </div>
-                    <div className="form-check form-check-inline">
-                        <input className="form-check-input" type="checkbox" id="skincareBox" value="skincare routine" />
-                        <label className="form-check-label" for="skincareBox">skincare routine</label>
-                    </div>
-                    <div className="form-check form-check-inline">
-                        <input className="form-check-input" type="checkbox" id="plantBox" value="plants" />
-                        <label className="form-check-label" for="plantBox">plants</label>
-                    </div>
-                    <div className="form-check form-check-inline">
-                        <input className="form-check-input" type="checkbox" id="gymBox" value="gym" />
-                        <label className="form-check-label" for="gymBox">gym</label>
-                    </div>
-                    <div className="form-check form-check-inline">
-                        <input className="form-check-input" type="checkbox" id="dailyCleaningBox" value="daily cleaning" />
-                        <label className="form-check-label" for="dailyCleaningBox">daily cleaning</label>
-                    </div>
-                    <div className="form-check form-check-inline">
-                        <input className="form-check-input" type="checkbox" id="medBox" value="meds" />
-                        <label className="form-check-label" for="medBox">meds</label>
+
+                    <div className="row">
+                        <input className="form-check-input form-check-inline col"
+                            type="checkbox" id="toothbrushBox" value="toothbrush" aria-label="toothbrushBox" />
+                        <input className="form-check-input form-check-inline col"
+                            type="checkbox" id="hairbrushBox" value="hairbrush" aria-label="hairbrushBox" />
+                        <input className="form-check-input form-check-inline col"
+                            type="checkbox" id="skincareBox" value="skincare routine" aria-label="skincareBox" />
+                        <input className="form-check-input form-check-inline col"
+                            type="checkbox" id="plantBox" value="plants" aria-label="plantBox" />
+                        <input className="form-check-input form-check-inline col"
+                            type="checkbox" id="gymBox" value="gym" aria-label="gymBox" />
+                        <input className="form-check-input form-check-inline col"
+                            type="checkbox" id="dailyCleaningBox" value="daily cleaning" aria-label="dailyCleaningBox" />
+                        <input className="form-check-input form-check-inline col"
+                            type="checkbox" id="medBox" value="meds" aria-label="medBox" />
+                        <input className="form-check-input form-check-inline col"
+                            type="checkbox" id="petBox" value="petStuff" aria-label="petBox" />
                     </div>
                 </div>
             </BrowserView>

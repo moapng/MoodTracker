@@ -36,17 +36,19 @@ function ThingsOfNotePage() {
 
         <>
             <BrowserView>
-                <div className="row" />
-                <form>
-                    <div className="form-group">
-                        <label htmlFor="noteTextArea">Things of Note</label>
-                        <textarea onChange={handleChange} className="form-control" id="noteTextArea" rows="8" placeholder="Write down anything you'd like!"></textarea>
-                        <div className="row" />
-                        <button type="submit" className="btn btn-primary" id="noteSubmit" onClick={handleSubmit}>Submit</button>
-                    </div>
-                </form>
-                <div className="row" />
-                <MiniNoteComponent />
+                <div className="row">
+                    <form>
+                        <div className="form-group">
+                            <label htmlFor="noteTextArea">Things of Note</label>
+                            <textarea onChange={handleChange} className="form-control" id="noteTextArea" rows="8" placeholder="Write down anything you'd like!"></textarea>
+                            <div className="row" />
+                            <button type="submit" className="btn btn-primary" id="noteSubmit" onClick={handleSubmit}>Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div className="row">
+                    <MiniNoteComponent />
+                </div>
 
             </BrowserView>
 
