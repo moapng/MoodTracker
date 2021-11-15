@@ -8,13 +8,17 @@ function MiniNoteComponent() {
             .then(response => response.json())
             .then(
                 (result) => {
-                    setNotes(result.slice(result.length - 5, result.length))
+                    //sorts by date
+                    setNotes(result.sort((a, b) => {
+                        return new Date(a.nDate) - new Date(b.nDate);
+                    }))
                 });
 
     })
-    //sort by date eller ba ha fem senaste?
-    let latest5Notes = notes.map((note) =>
-        <div className="miniNoteCard" key={note.note}>
+
+    //slice to show 5 latest
+    let latestNotes = notes.slice(notes.length - 5, notes.length).map((note) =>
+        <div className="miniNoteCard" key={note.id}>
             <h1>{note.nDate.split('T')[0]}</h1>
             <p>{note.note}</p>
         </div>);
@@ -22,7 +26,7 @@ function MiniNoteComponent() {
     return (
         <div className="container">
             <div className="row">
-                {latest5Notes}
+                {latestNotes}
             </div>
             <div className="row" />
         </div>
