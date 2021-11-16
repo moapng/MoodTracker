@@ -103,7 +103,6 @@ background-color: var(--darker-blueish-green);
   padding: 10px;
   background: var(--darkest-green);
   color: var(--darker-blueish-green);
-  width: 80vw;
   margin: auto;
   font-size: 1.5vw;
   border:none;
@@ -137,7 +136,7 @@ background-color: var(--darker-blueish-green);
 
 
 
-.form-check-label {
+label {
   display: inline;
 }
 

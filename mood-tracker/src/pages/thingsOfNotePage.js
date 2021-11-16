@@ -33,23 +33,24 @@ function ThingsOfNotePage() {
         }).catch((error) => { console.error(error); })
     }
     return (
-
         <>
             <BrowserView>
-                <div className="row">
-                    <form>
-                        <div className="form-group">
-                            <label htmlFor="noteTextArea">Things of Note</label>
-                            <textarea onChange={handleChange} className="form-control" id="noteTextArea" rows="8" placeholder="Write down anything you'd like!"></textarea>
-                            
-                            <button type="submit" className="btn btn-primary" id="noteSubmit" onClick={handleSubmit}>Submit</button>
-                        </div>
-                    </form>
+                <div className="container">
+                    <div className="row">
+                        <h2 className="col offset-1">Things of Note</h2>
+                    </div>
+                    <div className="row">
+                        <form>
+                            <div className="form-group col-10 offset-1">
+                                <textarea onChange={handleChange} className="form-control" id="noteTextArea" rows="8" placeholder="Write down anything you'd like!" aria-label="noteTextArea"></textarea>
+                                <button type="submit" className="btn btn-primary" id="noteSubmit" onClick={handleSubmit}>Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div className="row">
+                        <MiniNoteComponent />
+                    </div>
                 </div>
-                <div className="row">
-                    <MiniNoteComponent />
-                </div>
-
             </BrowserView>
 
             <MobileView>
