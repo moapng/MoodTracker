@@ -15,6 +15,7 @@ function ThingsOfNotePage() {
     }
 
     const handleSubmit = () => {
+        //TO DO:
         //setuId till den som är inloggad
         setId(crypto.randomUUID());
         fetch('https://localhost:44302/api/ofnote', {

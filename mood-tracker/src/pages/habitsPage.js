@@ -25,10 +25,8 @@ function HabitsPage() {
     }
 
     const handleSubmit = () => {
+        //TO DO:
         //setuId till user id
-
-        console.log(habits);
-
         setId(crypto.randomUUID());
         fetch('https://localhost:44302/api/habit', {
             mode: 'cors',
