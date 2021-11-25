@@ -43,8 +43,8 @@ function ThingsOfNotePage() {
                     <div className="row">
                         <form>
                             <div className="form-group col-10 offset-1">
-                                <textarea onChange={handleChange} className="form-control" id="noteTextArea" rows="8" placeholder="Write down anything you'd like!" aria-label="noteTextArea"></textarea>
-                                <button type="submit" className="btn btn-primary" id="noteSubmit" onClick={handleSubmit}>Submit</button>
+                                <textarea onChange={handleChange} className="form-control" id="noteTextArea" placeholder="Write down anything you'd like!" aria-label="noteTextArea"></textarea>
+                                <button type="submit" className="btn btn-primary col-12" id="noteSubmit" onClick={handleSubmit}>Submit</button>
                             </div>
                         </form>
                     </div>

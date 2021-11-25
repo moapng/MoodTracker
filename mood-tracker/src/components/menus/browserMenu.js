@@ -19,7 +19,7 @@ function BrowserMenu() {
             <div className="container">
                 <div className="row">
                     {categories.map((category) =>
-                        <div key={category.name + 1} className="col">
+                        <div key={category.name + 1} className="col-sm-7 col-md-6 col-lg-3">
                             <Link key={category.name} to={"/" + category.name} >
                                 <CardComponent key={category.description} name={category.name} description={category.description} />
                             </Link>

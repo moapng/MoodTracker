@@ -3,7 +3,7 @@
   --almost-white: #F8EDEB;
 
   --beige: #ECE4DB;
-  
+
   --darker-blueish-green: #38686A;
   --blueish-green: #4E7171;
 
@@ -27,12 +27,14 @@ h1 {
   text-align: center;
   margin-top: 2vw;
 }
+
 h2 {
   font-size: 3vw;
   font-family: 'Merriweather', serif;
   margin-top: 0;
   margin-bottom: 0;
 }
+
 p {
   font-size: 2vw;
   color: var(--almost-white);
@@ -43,34 +45,44 @@ a {
   color: var(--blueish-green);
   transition: 0.6s;
 }
+
 a:hover {
   color: var(--darker-blueish-green);
 }
-label{
-  margin-left:10vw;
+
+label {
+  margin-left: 10vw;
   font-family: 'Merriweather', serif;
   font-size: 2.5vw;
 }
 
+.form-check-input {
+  height: 2vw;
 
-.btn-primary{
+}
+
+.form-check-input:checked {
+  background: var(--darker-blueish-green);
+  border-color: var(--darker-blueish-green);
+  border-image: stretch;
+}
+
+
+.btn-primary {
   background-color: var(--blueish-green);
   border: none;
   float: right;
-  margin-right: 10vw;
   transition: 0.6s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width:8vw;
-  height:3vw;
   margin-top: 1.5vw;
   margin-bottom: 2vw;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
   background-color: var(--darker-blueish-green);
 }
 
 .card {
-  width: 20vw;
   height: 16vw;
   background-color: var(--blueish-green);
   border-radius: 20%;
@@ -78,62 +90,69 @@ label{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: auto;
 }
+
 .card:hover {
-background-color: var(--darker-blueish-green);
+  background-color: var(--darker-blueish-green);
 }
+
 .card-img-top {
   width: 12vw;
   height: 12vw;
   display: block;
   margin: auto;
 }
+
 .card-title {
   text-align: center;
   font-size: 2.5vw;
   color: var(--white);
   margin-top: 0.7vw;
 }
-.card p{
-  color:var(--almost-white);
+
+.card p {
+  color: var(--almost-white);
   text-align: center;
 }
 
 
-#noteTextArea{
+#noteTextArea {
+  height: 20vw;
   padding: 10px;
   background: var(--darkest-green);
   color: var(--darker-blueish-green);
   margin: auto;
   font-size: 1.5vw;
-  border:none;
+  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#noteTextArea::placeholder{
+
+#noteTextArea::placeholder {
   color: var(--darker-blueish-green)
 }
 
 
 .miniNoteCard {
-  width: 16vw;
-  height: 14vw;
+  height: 12vw;
   background: var(--darkest-green);
   border-radius: 10%;
   transition: 0.6s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: auto;
   overflow: hidden;
+  margin-bottom: 1vw;
 }
+
 .miniNoteCard h1 {
-  color:var(--almost-white);
-  text-align: center;
-  font-size: 1.5vw;
-}
-.miniNoteCard p {
-  color:var(--almost-white);
+  color: var(--almost-white);
   text-align: center;
   font-size: 1.5vw;
 }
 
+.miniNoteCard p {
+  color: var(--almost-white);
+  text-align: center;
+  font-size: 1.5vw;
+}
 
 
 label {
@@ -141,27 +160,46 @@ label {
 }
 
 
-@media (max-width: 500px) { 
-  
+@media (max-width: 768px) {
+
   h2 {
-    font-size: 7vw;
-  }
-  p {
     font-size: 5vw;
   }
 
-  .card {
-    width: 75vw;
-    height: 75vw;
-    border-radius: 45%;
+  p {
+    font-size: 5vw;
     margin: auto;
   }
-  .card-img-top{
-    width: 55vw;
-    height: 55vw;
+
+  .card {
+    height: 25vw;
+    margin-top: 10vw;
   }
+
   .card-title {
     font-size: 10vw;
-    margin-top: 0;
+    margin: auto;
+  }
+
+  .card-description {
+    margin: auto;
+    display: none;
+  }
+
+
+  #noteTextArea {
+    height: 50vw;
+  }
+
+  .miniNoteCard {
+    height: 20vw;
+  }
+
+  .miniNoteCard h1 {
+    font-size: 3vw;
+  }
+
+  .miniNoteCard p {
+    font-size: 4vw;
   }
 }

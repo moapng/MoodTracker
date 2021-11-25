@@ -18,9 +18,9 @@ function MiniNoteComponent() {
 
     //slice to show 5 latest
     let latestNotes = notes.slice(notes.length - 5, notes.length).map((note) =>
-        <div className="miniNoteCard" key={note.id}>
-            <h1>{note.nDate.split('T')[0]}</h1>
-            <p>{note.note}</p>
+        <div className="miniNoteCard col-7 col-sm-4 col-lg-2" key={note.id}>
+            <h1 className="noteh1">{note.nDate.split('T')[0]}</h1>
+            <p >{note.note}</p>
         </div>);
 
     return (
@@ -28,7 +28,6 @@ function MiniNoteComponent() {
             <div className="row">
                 {latestNotes}
             </div>
-            <div className="row" />
         </div>
 
     );

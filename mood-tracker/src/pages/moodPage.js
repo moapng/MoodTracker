@@ -18,18 +18,18 @@ function MoodPage() {
                             [new Date(2021, 11, 12), 1],
                             [new Date(2021, 11, 14), 3],
                             [new Date(2021, 11, 16), 1],
-                            [new Date(2021, 11, 19), 2],
+                            [new Date(2021, 11, 19), 2]
 
                         ]}
                         options={{ title: 'Mood' },
                         {
                             colorAxis:
                                 [
-                                    { value: 0, color: 'pink' },
+                                    { value: 0, color: 'red' },
                                     { value: 1, color: 'blue' },
                                     { value: 2, color: 'green' },
                                     { value: 3, color: 'red' },
-                                    { value: 4, color: 'yellow' },
+                                    { value: 4, color: 'yellow' }
 
                                 ]
                         }}>

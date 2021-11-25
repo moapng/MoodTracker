@@ -15,8 +15,7 @@ function HabitsPage() {
 
     const handleChange = ({ target }) => {
         const { value, checked } = target;
-        //setHabits med spread-operator för att ha med de föregående värdena
-        //ovanstående target 
+        //setHabits with spread-operator to keep old values as well
         setHabits((prev) => ({
             ...prev,
             [value]: checked
@@ -94,7 +93,7 @@ function HabitsPage() {
                                 type="checkbox" id="petBox" value="pets" aria-label="petBox" />
                         </div>
                         <div className="row">
-                            <button type="submit" className="btn btn-primary" id="habitSubmit" onClick={handleSubmit}>Submit</button>
+                            <button type="submit" className="btn btn-primary col-10 offset-1" id="habitSubmit" onClick={handleSubmit}>Submit</button>
                         </div>
                     </form>
                 </div>
