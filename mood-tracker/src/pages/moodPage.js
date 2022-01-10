@@ -7,7 +7,7 @@ function MoodPage() {
     return (
         <>
             <BrowserView>
-                <div className="container">
+                <div className='container'>
                     <Chart
                         height={300}
                         chartType='Calendar'
